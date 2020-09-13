@@ -1,0 +1,29 @@
+@font-face {
+  font-family: AquilineTwo;
+  src: url("../../Assets/Fonts/AquilineTwo.ttf");
+}
+
+.logo {
+  height: 8vh;
+  width: 8vh;
+  padding-top: 1vh;
+  margin-left: 5vw;
+}
+.NavCont {
+  background-color: rgba(0, 0, 0, 0.221);
+}
+.navLinks {
+  display: flex;
+  flex-direction: inline-block;
+  float: right;
+}
+.BtnText {
+  font-family: AquilineTwo;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000,
+    0 0 60px #000, 0 0 70px #000, 0 0 80px #000;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin: 0 4vh;
+}

@@ -1,0 +1,64 @@
+.sort{
+    display: flex;
+    justify-content:center;
+    /* align-items:center; */
+}
+.cover{
+    background:url('../../Assets/Images/bg2.jpg') no-repeat center center;
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+}
+.field{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 15vw;
+    transition: 5s ease-in;
+}
+#standard-basic{
+    background:#fff;
+    /* color: #fff; */
+    margin-right: 2vh;
+    border-radius:5px;
+    width: 35vh;
+}
+.button{
+    height: 7.3vh;
+    margin-left: 5vh;
+}
+.layer{
+    background:#0000007e;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    justify-content:center
+}
+.line-1{
+    position: relative;
+    top: 30%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+    color:#fff;
+
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2.5s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width:21em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}

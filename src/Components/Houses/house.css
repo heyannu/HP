@@ -1,0 +1,116 @@
+#houses {
+  background: url("../../Assets/Images/darkbg.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  font-family: blackadder;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* @font-face {
+  font-family: parseltongue;
+  src: url("../../Assets/Fonts/parseltongue.ttf");
+} */
+h5 {
+  font-size: 6vh;
+  text-align: center;
+  font-family: parseltongue;
+}
+h4 {
+  font-size: 4vh;
+  text-align: center;
+  font-family: ParryHotter;
+}
+.slide-container {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper::focus {
+  outline: 0;
+}
+.dialog{
+  background:rgba(0, 0, 0, 0.034);
+}
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  width: 35vw;
+  height: 50vh;
+  position: relative;
+  margin-left: 3.5vh;
+}
+.gif{
+  display:flex;
+  justify-content: center;
+  margin-top:8vw
+}
+.btn{
+  width:21vw;
+  background:rgba(255, 255, 255, 0.61);
+  text-decoration:none
+}
+.btn p{
+  font-size:1.5vh ;
+  height:1vh
+}
+.card .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44vh;
+  height: 66vh;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  transform: perspective(500px) rotateY(0deg);
+  border-radius: 10px;
+}
+.card:hover .face.front {
+  transform: perspective(500px) rotateY(180deg);
+}
+.card .face.back {
+  transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .face.back {
+  transform: perspective(500px) rotateY(360deg);
+}
+.main {
+  margin-top: 12vh;
+}
+
+.img {
+  width: 32vh;
+  height: 32vh;
+  position: absolute;
+  top: 1vh;
+  margin-top: 14vh;
+}
+.flag {
+  color: white;
+}
+.text {
+  color: #fff;
+  padding: 0.1vh;
+  font-size: 3vh;
+}
+.caps {
+  text-transform: capitalize;
+}
+.header {
+  color: #fff;
+}
+.border {
+  margin: 1vh;
+  position: relative;
+  border: 1px solid rgb(255, 255, 255);
+}
+.bord {
+  position: absolute;
+  /* width: 21vw;
+  height: 27vw; */
+}
