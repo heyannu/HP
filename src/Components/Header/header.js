@@ -27,8 +27,11 @@ export default class Header extends Component {
                             <Link to={{ pathname: '/students' }}>
                                 <Button color="inherit" className='Btn'><span className='BtnText'>Characters</span></Button>
                             </Link>
+                            
+                            <Link to={{ pathname: '/spellbook' }}>
+                                <Button color="inherit" className='Btn'><span className='BtnText'>Spell Book</span></Button>
+                            </Link>
                             <Link to={{ pathname: '/spells' }}>
-
                                 <Button color="inherit" className='Btn'><span className='BtnText'>Spells</span></Button>
                             </Link>
                             <Link to={{ pathname: '/sort' }}>

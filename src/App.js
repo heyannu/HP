@@ -6,6 +6,8 @@ import Onehouse from './Components/Onehouse/onehouse.js';
 import Character from './Components/Characters/characters.js';
 import SortingHat from './Components/SortingHat/sort.js'
 import Spells from './Components/Spells/spells.js'
+import Spellbook from './Components/Spellbook/spellbook.js'
+import Details from './Components/Details/details.js'
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
@@ -27,6 +29,8 @@ export default class App extends Component {
             <Route exact path='/houses' component={House} />
             <Route exact path='/students' component={Character} />
             <Route exact path='/sort' component={SortingHat} />
+            <Route exact path='/details' component={Details}/>
+            <Route exact path='/spellbook' component={Spellbook}/>
             <Route component={Errorr} />
           </Switch>
         </Router>

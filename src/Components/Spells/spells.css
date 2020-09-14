@@ -1,43 +1,38 @@
-.flip {
-  margin-top: 5vh;
+@font-face{
+  font-family:Aquiline;
+  src: url("../../Assets/Fonts/Aquiline.ttf");
+
 }
-.spells {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 20vh;
-}
-.container {
-  background: url("../../Assets/Images/notebg - Copy.jpg") no-repeat center;
-  background-size: cover;
-  height: 100vh;
-}
-.grid {
-  background: url("../../Assets/Images/note.png") no-repeat center center;
-  background-size: 32vw 100vh;
-  border-radius: 20px;
-  padding-top: 20vh;
-  height: 100vh;
-  border: 5px #fff;
-}
-@font-face {
+
+li{
+  color: #ffff;
+  list-style: none;
+  display:flex;
+  justify-content: left;
+  padding:1vh 8vh;
   font-family: ParryHotter;
-  src: url("../../Assets/Fonts/ParryHotter.ttf");
+  font-size: 3vh;
+  
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
+.li:hover{
+  background:#3284b8;
+  color:#000
+}
+.container_box{
+  background:url('../../Assets/Images/darkbg.jpg') no-repeat ;
+  background-size:cover;
+  padding:5vh
+}
+.container_li{
+  background:#00000095;
 
-#title h1 {
-  margin-top: 12vh;
-  text-decoration: underline;
-  font-size: 3vh;
 }
-#para p {
-  margin-top: 6.5vh;
-  padding: 3vh;
-  font-size: 3vh;
+.spellsize{
+  color: #ffffff;
+  font-size:3vh;
+  font-family: ParryHotter;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff
 }
-#th4 {
-  margin-top: 20vh;
-  text-align: left;
-  font-size: 3vh;
-  padding-right: 16vh;
-}
-

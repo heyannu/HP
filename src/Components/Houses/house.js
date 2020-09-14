@@ -43,7 +43,6 @@ export default class House extends Component {
                         },
                     }}
                 >
-                    <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
                     <DialogContent class="gif">
                         <img src={giphy} />
                     </DialogContent>

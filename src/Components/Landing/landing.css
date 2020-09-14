@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    /* overflow: hidden; */
     background: url('../../Assets/Images/newbg.jpg') no-repeat;
     background-size:100vw 100vh;
 }

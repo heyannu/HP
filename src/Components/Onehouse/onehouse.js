@@ -92,7 +92,7 @@ export default class OneHouse extends Component {
                                                 <img src={Gr[0]} class="pic" />
                                             </div>
                                             <div>
-                                                <h4>{this.state.data.headOfHouse}<br></br> is the House Head</h4>
+                                                < h4 class="spellsize">{this.state.data.headOfHouse}<br></br> is the House Head</h4>
                                             </div>
                                         </div>
                                     </Grid>
@@ -102,7 +102,7 @@ export default class OneHouse extends Component {
                                                 <img src={Gr[1]} class="pic" />
                                             </div>
                                             <div>
-                                                <h4>{this.state.data.houseGhost}<br></br> is the House Ghost</h4>
+                                                < h4 class="spellsize">{this.state.data.houseGhost}<br></br> is the House Ghost</h4>
                                             </div>
 
                                         </div>
@@ -113,7 +113,7 @@ export default class OneHouse extends Component {
                                                 <img src={Gr[2]} class="pic" />
                                             </div>
                                             <div>
-                                                <h4><span style={{ textTransform: 'capitalize' }}>{this.state.data.mascot} <br></br></span> is the House Mascot</h4>
+                                                < h4 class="spellsize"><span style={{ textTransform: 'capitalize' }}>{this.state.data.mascot} <br></br></span> is the House Mascot</h4>
                                             </div>
                                         </div>
                                     </Grid>

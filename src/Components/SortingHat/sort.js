@@ -42,25 +42,26 @@ export default class SortingHat extends Component {
         console.log(this.state.data)
     }
     submit(e) {
+        var name = this.state.name.toUpperCase();
         if (this.state.name == "") {
             Swal.fire('Please enter your name');
         }
         else {
             var url = '';
-            if (this.state.data == 'Ravenclaw') {
+            if (this.state.data === 'Ravenclaw') {
                 url = gif[1]
             }
-            else if (this.state.data == 'Slytherin') {
+            else if (this.state.data === 'Slytherin') {
                 url = gif[2]
             }
-            else if (this.state.data == 'Gryffindor') {
+            else if (this.state.data === 'Gryffindor') {
                 url = gif[0]
             }
             else {
                 url = gif[3]
             }
             Swal.fire({
-                title: 'Congratulations! ' + this.state.name,
+                title: 'Congratulations! ' + name,
                 text: 'You belong to ' + this.state.data,
                 imageUrl: url,
                 imageWidth: 400,
