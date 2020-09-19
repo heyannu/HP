@@ -6,6 +6,12 @@
   justify-content: flex-end;
   margin-right: 20vh;
 }
+.notspells {
+  display: none;
+}
+.minispells {
+  display: none;
+}
 .container {
   background: url("../../Assets/Images/notebg - Copy.jpg") no-repeat center;
   background-size: cover;
@@ -17,27 +23,129 @@
   border-radius: 20px;
   padding-top: 20vh;
   height: 100vh;
-  border: 5px #fff;
 }
 @font-face {
   font-family: ParryHotter;
   src: url("../../Assets/Fonts/ParryHotter.ttf");
 }
 
-#title h1 {
-  margin-top: 12vh;
-  text-decoration: underline;
-  font-size: 3vh;
-}
-#para p {
-  margin-top: 6.5vh;
+#title {
+  width: 50%;
   padding: 3vh;
-  font-size: 3vh;
+  padding-left: 7.5vh;
+  margin-top: 6vh;
+}
+#title h1 {
+  font-size: 3.3vh;
+  text-align: center;
 }
 #th4 {
-  margin-top: 20vh;
+  margin-top: 22vh;
   text-align: left;
-  font-size: 3vh;
-  padding-right: 16vh;
+  justify-content: left;
+  display: flex;
 }
 
+#para {
+  padding: 3vh;
+  padding-right: 9vh;
+  width: 50%;
+  margin-top: 3vh;
+}
+#para p {
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 1067px) {
+  .spells {
+    display: none;
+  }
+  .notspells {
+    display: block;
+    padding: 6vh;
+  }
+  .minispells {
+    display: none;
+  }
+  #title1 {
+    background: url("../../Assets/Images/note.png") no-repeat center center;
+    border-radius: 15px;
+    height: 71vh;
+  }
+  .magicspells {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigate1 {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+  }
+  .navigate2 {
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnss{
+    width: 90vh;
+    display: flex;
+    flex-direction:row
+  }
+  .btnleft{
+    width: 50%;
+    padding:1vh 6vh;
+    background:rgba(235, 209, 172,0.8);
+  }
+  
+  .btnright{
+    width: 50%;
+    padding:1vh 6vh;
+    background:rgba(235, 209, 172,0.8);
+    
+  }
+  #one {
+    padding-top: 23vh;
+  }
+  #one h1 {
+    font-size: 4.5vh;
+  }
+  #two {
+    padding: 3vh;
+    padding-top: 20vh;
+  }
+  #two p {
+    font-size: 3vh;
+  }
+  .buttonone {
+    background: rgba(235, 209, 172, 0.8);
+    color: #000;
+  }
+
+  .buttontwo {
+    background: rgba(235, 209, 172, 0.8);
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .spells {
+    display: none;
+  }
+  .notspells {
+    display: none;
+  }
+  .minispells {
+    display: block;
+  }
+  .minimagicspells {
+    margin-top: 5vh;
+    background: url("../../Assets/Images/note.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 5px;
+    margin: 5vh 3vh;
+  }
+  #title2 {
+    border-radius: 15px;
+    height: 71vh;
+  }
+}

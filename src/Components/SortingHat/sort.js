@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import { sortingHat } from '../../api/api'
 import { TextField, Button } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid';
@@ -29,7 +29,6 @@ export default class SortingHat extends Component {
 
         const sortingHatData = await sortingHat()
         this.setState({ data: sortingHatData.data })
-        console.log(this.state.data)
     }
     name(e) {
         this.setState({
@@ -39,11 +38,10 @@ export default class SortingHat extends Component {
     async again() {
         const sortingHatData = await sortingHat()
         this.setState({ data: sortingHatData.data })
-        console.log(this.state.data)
     }
     submit(e) {
         var name = this.state.name.toUpperCase();
-        if (this.state.name == "") {
+        if (this.state.name === "") {
             Swal.fire('Please enter your name');
         }
         else {
@@ -81,9 +79,9 @@ export default class SortingHat extends Component {
     }
     render() {
         return (
-            <div className="cover">
+            <div className="sort">
                 <Header />
-                <div className="sort">
+                <div className="sort1">
                     <Grid container className="layer">
                         <Grid item lg={6}>
                             <p class="line-1 anim-typewriter">Would you like to Know which house you belong to?</p>

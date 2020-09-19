@@ -9,7 +9,7 @@ import Spells from './Components/Spells/spells.js'
 import Spellbook from './Components/Spellbook/spellbook.js'
 import Details from './Components/Details/details.js'
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 export default class App extends Component {
   constructor(props) {

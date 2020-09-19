@@ -1,22 +1,62 @@
-body{
-    /* overflow: hidden; */
-    background: url('../../Assets/Images/newbg.jpg') no-repeat;
-    background-size:100vw 100vh;
+.magic {
+  overflow: hidden;
+  background: url("../../Assets/Images/newbg.jpg") center center no-repeat;
+  background-size: 100vw 100vh;
+  height:100vh;
+  width:100vw;
 }
 /* @font-face {
     font-family: ParryHotter;
     src: url("../../Assets/Fonts/ParryHotter.ttf");
   }
    */
-h1{
-    font-family: ParryHotter;
-    color: rgb(36, 32, 32);
-    text-align: center;
-    font-size: 6vh;
+h1 {
+  font-family: ParryHotter;
+  color: rgb(36, 32, 32);
+  text-align: center;
+  font-size: 6vh;
 }
-p{
-    font-family: ParryHotter;
-    color: rgb(36, 32, 32);
-    text-align: center;
-    font-size: 4vh;
+p {
+  font-family: ParryHotter;
+  color: rgb(36, 32, 32);
+  text-align: center;
+  font-size: 4vh;
+}
+
+@media screen and (max-width: 992px) {
+  .magic {
+    background-size: 100vw 130vw;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .tsparticles{
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .magic {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 600px) {
+  .magic {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .magic {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    overflow: hidden;
+  }
 }

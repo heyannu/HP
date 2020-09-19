@@ -1,4 +1,4 @@
-#houses {
+#house {
   background: url("../../Assets/Images/darkbg.jpg") no-repeat center center
     fixed;
   background-size: cover;
@@ -6,12 +6,8 @@
   color: #ffffff;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
-
-/* @font-face {
-  font-family: parseltongue;
-  src: url("../../Assets/Fonts/parseltongue.ttf");
-} */
 h5 {
   font-size: 6vh;
   text-align: center;
@@ -30,8 +26,8 @@ h4 {
 .wrapper::focus {
   outline: 0;
 }
-.dialog{
-  background:rgba(0, 0, 0, 0.034);
+.dialog {
+  background: rgba(0, 0, 0, 0.034);
 }
 .card {
   position: relative;
@@ -41,19 +37,19 @@ h4 {
   position: relative;
   margin-left: 3.5vh;
 }
-.gif{
-  display:flex;
+.gif {
+  display: flex;
   justify-content: center;
-  margin-top:8vw
+  margin-top: 8vw;
 }
-.btn{
-  width:21vw;
-  background:rgba(255, 255, 255, 0.61);
-  text-decoration:none
+.btn {
+  width: 21vw;
+  background: rgba(255, 255, 255, 0.61);
+  text-decoration: none;
 }
-.btn p{
-  font-size:1.5vh ;
-  height:1vh
+.btn p {
+  font-size: 1.5vh;
+  height: 1vh;
 }
 .card .face {
   position: absolute;
@@ -113,4 +109,140 @@ h4 {
   position: absolute;
   /* width: 21vw;
   height: 27vw; */
+}
+
+@media screen and (max-width: 1280px) {
+  #houses {
+    overflow: visible;
+    height: 100vh;
+    width: 100vw;
+  }
+  .card {
+    margin-left: 15vh;
+    margin-bottom: 20vw;
+  }
+  .btn {
+    width: 22vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #houses {
+    overflow: visible;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .card {
+    margin-left: 8vh;
+    margin-bottom: 20vw;
+  }
+  .btn {
+    width: 28vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #houses {
+    overflow: visible;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .magic {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .card {
+    margin-left: 5vh;
+    margin-bottom: 20vw;
+  }
+  .btn {
+    width: 36vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    margin-left: 3vh;
+    margin-bottom: 20vw;
+  }
+  
+  .btn {
+    width: 38vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .card {
+    margin-left: 1vh;
+    margin-bottom: 20vw;
+  }
+  
+  .btn {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  #houses {
+    overflow: visible;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .magic {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .card {
+    margin-left: 22vh;
+    margin-bottom: 25vw;
+  }
+  .btn {
+    width: 41vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .card {
+    margin-left: 20vh;
+    margin-bottom: 25vw;
+  }
+  .btn{
+    width:42vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    margin-left: 16vh;
+    margin-bottom: 25vw;
+  }
+  
+  .btn {
+    width: 43vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  #houses {
+    overflow: visible;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .magic {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .card {
+    margin-left: 10vh;
+    margin-bottom: 30vw;
+  }
+  
+  .btn {
+    width:44vw;
+  }
 }

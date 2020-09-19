@@ -1,10 +1,9 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import Logo from '../../Assets/Images/logo.png'
-import { Link, BrowserRouter as Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 import './header.css'
 
 
@@ -13,13 +12,12 @@ export default class Header extends Component {
         return (
             <Toolbar className="NavCont">
                 <Grid container>
-                    <Grid item lg={6}>
+                    <Grid item xl={6} lg={6} md={6} sm={6} xs={6}>
                         <Link to={{ pathname: '/' }}>
-
-                            <img className='logo' src={Logo} />
+                            <img className='logo' src={Logo} alt='Hogwarts'/>
                         </Link>
                     </Grid>
-                    <Grid item lg={6}>
+                    <Grid item xl={6} lg={6} md={6} sm={6} xs={6}>
                         <div className='navLinks'>
                             <Link to={{ pathname: '/houses' }}>
                                 <Button color="inherit" className='Btn'><span className='BtnText'>Houses</span></Button>

@@ -1,9 +1,9 @@
-.sort{
+.sort1{
     display: flex;
     justify-content:center;
     /* align-items:center; */
 }
-.cover{
+.sort{
     background:url('../../Assets/Images/bg2.jpg') no-repeat center center;
     background-size: cover;
     height:100vh;

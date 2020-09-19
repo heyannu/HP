@@ -1,18 +1,13 @@
-import React, { useState, Component } from 'react';
+import React, {Component } from 'react';
 import Header from '../Header/header.js'
 import './details.css'
 import giphy from '../../Assets/Images/giphy.gif'
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CancelIcon from '@material-ui/icons/Cancel';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Card from '@material-ui/core/Card';
-import Button from '@material-ui/core/Button';
-import { houseData } from '../../api/api'
+import { BrowserRouter as Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import { ArrowBack } from '@material-ui/icons';
-import Checkbox from '@material-ui/core/Checkbox';
-import { Dialog, DialogContent, DialogContentText, DialogActions, DialogTitle } from '@material-ui/core';
+import { Dialog, DialogContent} from '@material-ui/core';
 
 export default class Details extends Component {
 
@@ -33,10 +28,9 @@ export default class Details extends Component {
     render() {
         const data = this.props.location.state.details;
         const url = this.props.location.state.url;
-        console.log(data)
 
         return (
-            <div id="houses">
+            <div id="details">
                 <Header />
                 <Dialog
                     fullScreen
@@ -49,7 +43,7 @@ export default class Details extends Component {
                     }}
                 >
                     <DialogContent class="gif">
-                        <img src={giphy} />
+                        <img src={giphy} alt='Loading...' />
                     </DialogContent>
                 </Dialog>
 
@@ -59,7 +53,7 @@ export default class Details extends Component {
                             <Link to={{ pathname: '/students' }}>
                                 <ArrowBack style={{ color: '#fff' }} className="arrow" fontSize="large" />
                             </Link>
-                            <img id='img2' src={url} />
+                            <img id='img2' src={url} alt={data.name}/>
                         </Grid>
                         <Grid item lg={8} className="data">
                             <h1 id='info'>

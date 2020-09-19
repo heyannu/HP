@@ -1,11 +1,11 @@
-import React, { useState, Component } from 'react';
+import React, {Component } from 'react';
 import { characterData } from '../../api/api'
 import './characters.css';
 import Grid from '@material-ui/core/Grid';
 import Header from '../Header/header.js';
-import { Link, BrowserRouter as Router } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import giphy from '../../Assets/Images/giphy.gif'
-import { Dialog, DialogContent, DialogContentText, DialogActions, DialogTitle } from '@material-ui/core';
+import { Dialog, DialogContent} from '@material-ui/core';
 
 export default class Character extends Component {
 
@@ -27,19 +27,19 @@ export default class Character extends Component {
                 open:false
             }, () => {
                 for (var i in this.state.data) {
-                    if (this.state.data[i].house == 'Hufflepuff') {
+                    if (this.state.data[i].house === 'Hufflepuff') {
                         color = '#C06D2888';
                     }
-                    else if (this.state.data[i].house == 'Gryffindor') {
+                    else if (this.state.data[i].house === 'Gryffindor') {
                         color = '#BC132088';
                     }
-                    else if (this.state.data[i].house == 'Slytherin') {
+                    else if (this.state.data[i].house === 'Slytherin') {
                         color = '#1D745288';
                     }
-                    else if (this.state.data[i].house == 'Ravenclaw') {
+                    else if (this.state.data[i].house === 'Ravenclaw') {
                         color = '#34348788';
                     }
-                    else if (this.state.data[i].house == undefined) {
+                    else if (this.state.data[i].house === undefined) {
                         color = '#580c2d'
                     }
                     this.state.id.push(color)
@@ -112,10 +112,8 @@ export default class Character extends Component {
             'https://vignette.wikia.nocookie.net/harrypotter/images/b/b2/Fenrir_Greyback.png/revision/latest/scale-to-width-down/292?cb=20090814213734'
         ]
         const id = this.state.id;
-        console.log(id[0], id[[1]])
-
         return (
-            <div className="up">
+            <div className="character">
                 <Header />
                 <Dialog
                     fullScreen
@@ -128,7 +126,7 @@ export default class Character extends Component {
                     }}
                 >
                     <DialogContent class="gif">
-                        <img src={giphy} />
+                        <img src={giphy} alt="Loading"/>
                     </DialogContent>
                 </Dialog>
                 <Grid container className="seconddiv">
@@ -140,7 +138,7 @@ export default class Character extends Component {
                                         <h1 className="student"><br />{single.name}</h1>
                                     </div>
                                     <div>
-                                        <img src={img[key]} className="propic"></img>
+                                        <img src={img[key]} className="propic"  alt={single.name}></img>
                                     </div>
                                 </div>
                             </Link>

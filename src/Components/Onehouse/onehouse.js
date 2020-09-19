@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import Header from '../Header/header.js'
 import G from '../../Assets/Images/gryffindor.png'
 import H from '../../Assets/Images/hufflepuff.png'
@@ -17,11 +17,8 @@ import fatfriar from '../../Assets/Images/fatfriar.png'
 import snape from '../../Assets/Images/snape.jpg'
 import baron from '../../Assets/Images/Baron.jpg'
 import './onehouse.css'
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Card from '@material-ui/core/Card';
-import Button from '@material-ui/core/Button';
-import { houseData } from '../../api/api'
 import Grid from '@material-ui/core/Grid';
 import { ArrowBack } from '@material-ui/icons';
 
@@ -44,39 +41,38 @@ export default class OneHouse extends Component {
         const images = [G, R, S, H];
         const color = ['#BC1320', '#343487', '#1D7452', '#C06D28']
         const data = this.props.location.state.data;
-        console.log(data);
         var Gr = [];
         var col = [];
         const id = this.state.id;
-        if (id == 0) {
+        if (id === 0) {
             Gr = [Minerva, Nick, GMascot];
             col = ['#BC1320', '#FEE71A'];
         }
-        else if (id == 1) {
+        else if (id === 1) {
             Gr = [filius, graylady, RMascot];
             col = ['#343487', '#893C03']
         }
-        else if (id == 2) {
+        else if (id === 2) {
             Gr = [snape, baron, SMascot]
             col = ['#1D7452', '#BCBDBE']
         }
-        else if (id == 3) {
+        else if (id === 3) {
             Gr = [Pomona, fatfriar, HMascot]
             col = ['#C06D28', '#000']
         }
         return (
-            <div id="houses">
+            <div id="onehouse">
                 <Header />
-                <div className="top">
+                <div className="onehouse">
                     {(data) ?
                         <Grid container spacing={3}>
-                            <Grid item lg={4}>
+                            <Grid item xl={4} lg={4} md={4} sm={6} xs={6}  >
                                 <Link to={{ pathname: '/houses' }}>
                                     <ArrowBack style={{ color: '#fff' }} className="arrow" fontSize="large" />
                                 </Link>
                                 <Card class="card1">
                                     <div class="face one" style={{ background: color[id] }}>
-                                        <img src={images[id]} class="img1"></img>
+                                        <img src={images[id]} class="img1" alt={data.name}></img>
                                     </div>
                                 </Card>
                                 <div class="colors">
@@ -86,20 +82,20 @@ export default class OneHouse extends Component {
                             </Grid>
                             <Grid item lg={8}>
                                 <div class="info">
-                                    <Grid item lg={4}>
+                                    <Grid item xl={4} lg={4} md={4} sm={6} xs={6} >
                                         <div class="left">
                                             <div class="pos">
-                                                <img src={Gr[0]} class="pic" />
+                                                <img src={Gr[0]} class="pic" alt={this.state.data.headOfHouse}/>
                                             </div>
                                             <div>
                                                 < h4 class="spellsize">{this.state.data.headOfHouse}<br></br> is the House Head</h4>
                                             </div>
                                         </div>
                                     </Grid>
-                                    <Grid item lg={4}>
+                                    <Grid item xl={4} lg={4} md={4} sm={6} xs={6} >
                                         <div class="left">
                                             <div class="pos">
-                                                <img src={Gr[1]} class="pic" />
+                                                <img src={Gr[1]} class="pic" alt={this.state.data.houseGhost}/>
                                             </div>
                                             <div>
                                                 < h4 class="spellsize">{this.state.data.houseGhost}<br></br> is the House Ghost</h4>
@@ -107,10 +103,10 @@ export default class OneHouse extends Component {
 
                                         </div>
                                     </Grid>
-                                    <Grid item lg={4}>
+                                    <Grid item xl={4} lg={4} md={4} sm={6} xs={6} >
                                         <div class="left">
                                             <div class="pos">
-                                                <img src={Gr[2]} class="pic" />
+                                                <img src={Gr[2]} class="pic" alt={this.state.data.mascot} />
                                             </div>
                                             <div>
                                                 < h4 class="spellsize"><span style={{ textTransform: 'capitalize' }}>{this.state.data.mascot} <br></br></span> is the House Mascot</h4>

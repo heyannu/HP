@@ -10,7 +10,7 @@
   border-radius: 15px;
   border: 5px double white;
 }
-#houses {
+#details {
   overflow: hidden;
   background: url("../../Assets/Images/darkbg.jpg") center no-repeat;
 }

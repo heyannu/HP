@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import Header from '../Header/header.js'
 import G from '../../Assets/Images/gryffindor.png'
 import H from '../../Assets/Images/hufflepuff.png'
@@ -6,8 +6,8 @@ import R from '../../Assets/Images/ravenclaw.png'
 import S from '../../Assets/Images/slytherin.png'
 import giphy from '../../Assets/Images/giphy.gif'
 import './house.css'
-import { Dialog, DialogContent, DialogContentText, DialogActions, DialogTitle } from '@material-ui/core';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Dialog, DialogContent} from '@material-ui/core';
+import { BrowserRouter as  Link } from 'react-router-dom';
 import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
 import { houseData } from '../../api/api'
@@ -44,16 +44,16 @@ export default class House extends Component {
                     }}
                 >
                     <DialogContent class="gif">
-                        <img src={giphy} />
+                        <img src={giphy} alt='Loading'/>
                     </DialogContent>
                 </Dialog>
                 <div className="main">
                     <Grid container>
                         {(data.length) ? data.map((single, key) => (
-                            <Grid item lg={3}>
+                            <Grid item xl={3} lg={3} md={6} sm={6} xs={12}>
                                 <Card class="card right">
                                     <div class="face front" style={{ background: color[key] }}>
-                                        <img src={images[key]} class="img"></img>
+                                        <img src={images[key]} class="img" alt=''></img>
                                     </div>
                                     <div class="face back" style={{ background: color[key] }}>
                                         <div class="border">

@@ -35,14 +35,14 @@ export default class Landing extends Component {
                     controls
                 />
                 <Particles
+                className="tsparticles"
                     params={{
-
                         particles: {
                             number: {
                                 value: 600,
                                 density: {
                                     enable: true,
-                                    value_area: 800
+                                    value_area: 1000
                                 }
                             },
                             color: {

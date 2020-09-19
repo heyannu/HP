@@ -1,13 +1,9 @@
-import React, { useState, Component } from 'react';
+import React, { Component } from 'react';
 import { spellData } from '../../api/api'
 import Header from '../Header/header.js'
-import FlipPage from "react-flip-page"
-import notes from '../../Assets/Images/note.png'
 import Grid from '@material-ui/core/Grid';
 import giphy from '../../Assets/Images/giphy.gif'
-import ViewListIcon from '@material-ui/icons/ViewList';
-import { Dialog, DialogContent, DialogContentText, DialogActions, DialogTitle } from '@material-ui/core';
-// import m1 from '../../Assets/Images/wand/m1.png'
+import { Dialog, DialogContent} from '@material-ui/core';
 import './spells.css'
 export default class Spells extends Component {
 
@@ -25,15 +21,6 @@ export default class Spells extends Component {
             open: false
         });
     }
-    useEffect() {
-        const [flipPageWidth, setFlipPageWidth] = useState("");
-        if (window.innerWidth > 1450) {
-            setFlipPageWidth("500");
-        } else {
-            setFlipPageWidth("200");
-        }
-        console.log(flipPageWidth)
-    };
     render() {
         const data = this.state.data;
         return (
@@ -51,7 +38,7 @@ export default class Spells extends Component {
                     >
 
                         <DialogContent class="gif">
-                            <img src={giphy} />
+                            <img src={giphy} alt="loading"/>
                         </DialogContent>
                     </Dialog>
                     <div class="container_li">
@@ -62,13 +49,13 @@ export default class Spells extends Component {
                         </Grid>
                         {(data.length) ? data.map((single, key) => (
                             <Grid container className="li">
-                                <Grid item lg={3}>
+                                <Grid item xl={3} lg={3} md={3} sm={12} xs={12}>
                                     <li>{single.spell}</li>
                                 </Grid>
-                                <Grid item lg={3} >
+                                <Grid item xl={3} lg={3} md={3} sm={12} xs={12}>
                                     <li>{single.type}</li>
                                 </Grid>
-                                <Grid item lg={6}>
+                                <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
                                     <li>{single.effect}</li>
                                 </Grid>
                             </Grid>
