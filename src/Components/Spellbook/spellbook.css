@@ -48,7 +48,7 @@
 
 #para {
   padding: 3vh;
-  padding-right: 9vh;
+  padding-right: 6vh;
   width: 50%;
   margin-top: 3vh;
 }
@@ -56,78 +56,63 @@
   font-size: 3vh;
 }
 
-@media screen and (max-width: 1067px) {
-  .spells {
-    display: none;
+@media screen and (max-width: 1300px) {
+  #para p {
+    font-size: 2.5vh;
+    width: 27vh;
+    /* padding: 1vh; */
   }
-  .notspells {
-    display: block;
-    padding: 6vh;
-  }
-  .minispells {
-    display: none;
-  }
-  #title1 {
-    background: url("../../Assets/Images/note.png") no-repeat center center;
-    border-radius: 15px;
-    height: 71vh;
-  }
-  .magicspells {
-    display: flex;
-    flex-direction: column;
-  }
-  .navigate1 {
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-  }
-  .navigate2 {
-    height: 70vh;
-    justify-content: center;
-    align-items: center;
-  }
-  .btnss{
-    width: 90vh;
-    display: flex;
-    flex-direction:row
-  }
-  .btnleft{
-    width: 50%;
-    padding:1vh 6vh;
-    background:rgba(235, 209, 172,0.8);
-  }
-  
-  .btnright{
-    width: 50%;
-    padding:1vh 6vh;
-    background:rgba(235, 209, 172,0.8);
-    
-  }
-  #one {
-    padding-top: 23vh;
-  }
-  #one h1 {
-    font-size: 4.5vh;
-  }
-  #two {
-    padding: 3vh;
-    padding-top: 20vh;
-  }
-  #two p {
-    font-size: 3vh;
-  }
-  .buttonone {
-    background: rgba(235, 209, 172, 0.8);
-    color: #000;
-  }
-
-  .buttontwo {
-    background: rgba(235, 209, 172, 0.8);
-    color: #000;
+  #th4 {
+    margin-top: 19vh;
+    margin-left: 3vh;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
+  .spells {
+    display: none;
+  }
+  .notspells {
+    padding: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .minispells{
+    display: none;
+  }
+  #spellcont {
+    background: url("../../Assets/Images/centernote.jpg")no-repeat center center;
+    width:55vw;
+    border-radius: 5px;
+    height: 70vh;
+  }
+  #leftpage {
+    margin-top:3vh;
+    width: 50%;
+  }
+  #leftpage p{
+    margin-top:22vh;
+    padding-left: 5vh;
+    font-size:4vh;
+  }
+  #rightpage {
+    margin-top:3vh;
+    width: 50%;
+  }
+  #rightpage p{
+    margin-top:22vh;
+    padding-left: 5vh;
+    font-size:3vh;
+  }
+  #paraspell{
+    margin-top:10vh;
+  }
+  #titlespell{
+    margin-top:10vh;
+  }
+}
+@media screen and (max-width:600px){
   .spells {
     display: none;
   }
@@ -135,17 +120,20 @@
     display: none;
   }
   .minispells {
-    display: block;
+    padding: 6vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
   }
-  .minimagicspells {
-    margin-top: 5vh;
-    background: url("../../Assets/Images/note.png") no-repeat center center;
-    background-size: cover;
+  #spellcont {
+    display: flex;
+    flex-direction:row;
+    background: url("../../Assets/Images/centernoteblank.jpg")no-repeat center center;
+    width:55vw;
     border-radius: 5px;
-    margin: 5vh 3vh;
+    height: 70vh;
   }
-  #title2 {
-    border-radius: 15px;
-    height: 71vh;
+  #lft{
+    margin-top: 5vh;
   }
 }

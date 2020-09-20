@@ -12,9 +12,10 @@ li{
   padding:1vh 8vh;
   font-family: ParryHotter;
   font-size: 3vh;
-  
-  border-left: 2px solid #fff;
-  border-right: 2px solid #fff;
+}
+
+.li{
+  border: 1px solid #fff;
 }
 .li:hover{
   background:#3284b8;
@@ -33,6 +34,9 @@ li{
   color: #ffffff;
   font-size:3vh;
   font-family: ParryHotter;
-  border-top:1px solid #fff;
-  border-bottom:1px solid #fff
+}
+@media screen and (max-width:600px){
+  .div{
+    display:none;
+  }
 }
