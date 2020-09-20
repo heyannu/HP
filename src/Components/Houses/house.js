@@ -31,7 +31,7 @@ export default class House extends Component {
         const color = ['#BC1320', '#343487', '#1D7452', '#C06D28']
         const data = this.state.data;
         return (
-            <div id="house">
+            <div className="house">
                 <Header />
                 <Dialog
                     fullScreen

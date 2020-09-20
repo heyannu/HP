@@ -7,23 +7,27 @@
   height: 8vh;
   width: 8vh;
   padding-top: 1vh;
-  margin-left: 5vw;
+  margin-bottom: 2vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .NavCont {
-  background-color: rgba(0, 0, 0, 0.221);
+  background-color: rgba(255, 255, 255, 0.221);
 }
 .navLinks {
   display: flex;
-  flex-direction: inline-block;
-  float: right;
+  flex-direction: column;
+  /* float: right; */
 }
 .BtnText {
   font-family: AquilineTwo;
   text-transform: capitalize;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000,
-    0 0 60px #000, 0 0 70px #000, 0 0 80px #000;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff,
+    0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
   font-size: 3.5vh;
   font-weight: bold;
   margin: 0 2vh;
+  width: 250px;
 }

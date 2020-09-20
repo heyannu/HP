@@ -5,11 +5,9 @@
   height:100vh;
   width:100vw;
 }
-/* @font-face {
-    font-family: ParryHotter;
-    src: url("../../Assets/Fonts/ParryHotter.ttf");
-  }
-   */
+body{
+  background:url("../../Assets/Images/darkbg.jpg")
+}
 h1 {
   font-family: ParryHotter;
   color: rgb(36, 32, 32);

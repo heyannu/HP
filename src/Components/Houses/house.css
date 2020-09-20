@@ -1,12 +1,13 @@
-#house {
+.house {
   background: url("../../Assets/Images/darkbg.jpg") no-repeat center center
     fixed;
   background-size: cover;
   font-family: blackadder;
   color: #ffffff;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  height: 150vh;
+  overflow: visible;
+  
 }
 h5 {
   font-size: 6vh;
@@ -113,7 +114,6 @@ h4 {
 
 @media screen and (max-width: 1280px) {
   #houses {
-    overflow: visible;
     height: 100vh;
     width: 100vw;
   }
@@ -128,7 +128,6 @@ h4 {
 
 @media screen and (max-width: 992px) {
   #houses {
-    overflow: visible;
     height: 100vh;
     width: 100vw;
   }
@@ -186,7 +185,6 @@ h4 {
 }
 @media screen and (max-width: 600px) {
   #houses {
-    overflow: visible;
     height: 100vh;
     width: 100vw;
   }
@@ -226,7 +224,6 @@ h4 {
 }
 @media screen and (max-width: 450px) {
   #houses {
-    overflow: visible;
     height: 100vh;
     width: 100vw;
   }

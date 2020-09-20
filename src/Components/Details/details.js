@@ -49,13 +49,13 @@ export default class Details extends Component {
 
                 <div id='top'>
                     <Grid container className="all">
-                        <Grid item lg={4} className="pic">
+                        <Grid item xl={4} lg={4} md={5} sm={5} xs={12} className="pic">
                             <Link to={{ pathname: '/students' }}>
-                                <ArrowBack style={{ color: '#fff' }} className="arrow" fontSize="large" />
+                                <ArrowBack style={{ color: '#fff' }} className="arrow1" fontSize="large" />
                             </Link>
                             <img id='img2' src={url} alt={data.name}/>
                         </Grid>
-                        <Grid item lg={8} className="data">
+                        <Grid item lg={8} lg={8} md={7} sm={7} xs={12}className="data">
                             <h1 id='info'>
                                 <span className='start'>Name  :- </span>
                                 {!data.name ? "Data Unvailable" : data.name}

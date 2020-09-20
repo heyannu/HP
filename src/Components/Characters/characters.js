@@ -129,9 +129,9 @@ export default class Character extends Component {
                         <img src={giphy} alt="Loading"/>
                     </DialogContent>
                 </Dialog>
-                <Grid container className="seconddiv">
+                <Grid container className="seconddiv" spacing={3}>
                     {(data.length) ? data.map((single, key) => (
-                        <Grid item lg={3} className="col">
+                        <Grid item xl={3} lg={3} md={4} sm={6} xs={12} className="col">
                             <Link to={{ pathname: '/details', state: { details: single, url: img[key] } }}>
                                 <div className="studentcont"style={{ backgroundColor:id[key] }} >
                                     <div>
