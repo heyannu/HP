@@ -65,7 +65,7 @@ export default class OneHouse extends Component {
                 <Header />
                 <div className="onehouse">
                     {(data) ?
-                        <Grid container spacing={3}>
+                        <Grid container spacing={3} className="largeView">
                             <Grid item xl={4} lg={4} md={4} sm={6} xs={6}  >
                                 <Link to={{ pathname: '/houses' }}>
                                     <ArrowBack style={{ color: '#fff' }} className="arrow" fontSize="large" />
@@ -85,7 +85,7 @@ export default class OneHouse extends Component {
                                     <Grid item xl={4} lg={4} md={4} sm={6} xs={6} >
                                         <div class="left">
                                             <div class="pos">
-                                                <img src={Gr[0]} class="pic" alt={this.state.data.headOfHouse}/>
+                                                <img src={Gr[0]} class="pic" alt={this.state.data.headOfHouse} />
                                             </div>
                                             <div>
                                                 < h4 class="spellsize">{this.state.data.headOfHouse}<br></br> is the House Head</h4>
@@ -95,7 +95,7 @@ export default class OneHouse extends Component {
                                     <Grid item xl={4} lg={4} md={4} sm={6} xs={6} >
                                         <div class="left">
                                             <div class="pos">
-                                                <img src={Gr[1]} class="pic" alt={this.state.data.houseGhost}/>
+                                                <img src={Gr[1]} class="pic" alt={this.state.data.houseGhost} />
                                             </div>
                                             <div>
                                                 < h4 class="spellsize">{this.state.data.houseGhost}<br></br> is the House Ghost</h4>
@@ -118,6 +118,11 @@ export default class OneHouse extends Component {
                         </Grid>
                         : null}
                 </div>
+                <Grid container>
+                    <div className="miniView">
+                        <h1>Everyone is in a meeting with Dumbledore, so the work on this page is still in progress. </h1>
+                    </div>
+                </Grid>
             </div >
         )
     };

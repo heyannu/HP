@@ -6,7 +6,12 @@
   width: 100vw;
   height: 100vh;
 }
-
+.largeView{
+  display: block
+}
+.miniView{
+  display: none;
+}
 @font-face {
   font-family: blackadder;
   src: url("../../Assets/Fonts/blackadder.ttf");
@@ -104,4 +109,20 @@ p {
   box-shadow: 0 0 10px rgb(255, 255, 255)}
 .members {
   position: relative;
+}
+
+
+@media screen and (max-width:1280px){
+  .miniView{
+    display: flex;
+    justify-content: center;
+    padding:6vh;
+    margin-top:5vh;
+  }
+  .miniView h1{
+    color: #fff;
+  }
+  .onehouse{
+    display: none;
+  }
 }

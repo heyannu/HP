@@ -4,7 +4,7 @@ import './details.css'
 import giphy from '../../Assets/Images/giphy.gif'
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CancelIcon from '@material-ui/icons/Cancel';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import { ArrowBack } from '@material-ui/icons';
 import { Dialog, DialogContent} from '@material-ui/core';

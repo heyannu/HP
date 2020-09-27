@@ -7,7 +7,7 @@ import S from '../../Assets/Images/slytherin.png'
 import giphy from '../../Assets/Images/giphy.gif'
 import './house.css'
 import { Dialog, DialogContent} from '@material-ui/core';
-import { BrowserRouter as  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
 import { houseData } from '../../api/api'
@@ -74,6 +74,7 @@ export default class House extends Component {
                             </Grid>
                         )) : null}
                     </Grid>
+                    
                 </div>
             </div >
         );

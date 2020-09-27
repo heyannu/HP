@@ -6,7 +6,18 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+@font-face{
+  font-family:AquilineTwo;
+  src: url("./Assets/Fonts/AquilineTwo.ttf");
+}
+@font-face {
+  font-family: blackadder;
+  src: url("./Assets/Fonts/blackadder.ttf");
+}
+@font-face {
+  font-family: ParryHotter;
+  src: url("./Assets/Fonts/ParryHotter.ttf");
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
