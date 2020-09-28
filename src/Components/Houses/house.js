@@ -62,9 +62,7 @@ export default class House extends Component {
                                                     <p class="header">{single.founder}</p>
                                                 </span>
                                             </p>
-                                            <p class="text"> Qualities of a true
-                                            <span style={{ fontWeight: 'bold' }}>{single.name}</span>
-                                            are " <span class="caps">{single.values[0]}, {single.values[1]}, {single.values[2]} ,& {single.values[3]}</span></p>
+                                            <p class="text"> Qualities of a true {single.name} are " <span class="caps">{single.values[0]}, {single.values[1]}, {single.values[2]} ,& {single.values[3]}</span></p>
                                         </div>
                                         <Link to={{ pathname: '/house', state: { data: single, key: key } }}>
                                             <Button variant="contained" className="btn"><p>Know more</p></Button>

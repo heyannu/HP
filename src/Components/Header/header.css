@@ -3,7 +3,7 @@
 .logo {
   height: 8vh;
   width: 8vh;
-  padding-top: 1vh;
+  margin-top: 7vh;
   margin-bottom: 2vw;
   display: block;
   margin-left: auto;
@@ -13,6 +13,7 @@
   background-color: rgba(255, 255, 255, 0.221);
 }
 .navLinks {
+  margin-top: 9vh;
   display: flex;
   flex-direction: column;
   /* float: right; */
@@ -27,4 +28,7 @@
   font-weight: bold;
   margin: 0 2vh;
   width: 250px;
+}
+.Btn{
+  margin-top: 4vh;
 }

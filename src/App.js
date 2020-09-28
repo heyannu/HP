@@ -27,7 +27,7 @@ export default class App extends Component {
             <Route exact path='/house' component={Onehouse} />
             <Route exact path='/spells' component={Spells} />
             <Route exact path='/houses' component={House} />
-            <Route exact path='/students' component={Character} />
+            <Route exact path='/characters' component={Character} />
             <Route exact path='/sort' component={SortingHat} />
             <Route exact path='/details' component={Details}/>
             <Route exact path='/spellbook' component={Spellbook}/>

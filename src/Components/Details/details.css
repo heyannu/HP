@@ -11,7 +11,7 @@
   border: 5px double white;
 }
 #details {
-  overflow: hidden;
+  overflow: hidden; 
   background: url("../../Assets/Images/darkbg.jpg") center no-repeat;
 }
 #top {
@@ -27,7 +27,6 @@
   color: #fff;
   font-family: blackadder;
   font-size: 4vh;
-  margin: 6vh 10vh;
 }
 .names {
   font-size: 4vh;
@@ -41,11 +40,10 @@
 .start {
   color: #dabc37;
 }
-.arrow1{
+.arrow1 {
   margin-left: 0vh;
   margin-top: 5vh;
-  margin-bottom:3vh;
-  pointer:cursor;
+  margin-bottom: 3vh;
 }
 .names {
   padding: 1vh;
@@ -72,7 +70,7 @@
     border: 5px double white;
   }
   #details {
-    overflow: hidden;
+    /* overflow: hidden; */
     background: url("../../Assets/Images/darkbg.jpg") center no-repeat;
   }
   #top {
