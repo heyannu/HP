@@ -51,7 +51,7 @@ export default class Character extends Component {
     }
     render() {
         const data = this.state.data;
-        var none = 'https://www.iconfinder.com/data/icons/delivery-and-logistic/64/Not_found_the_recipient-no_found-person-user-search-searching-4-512.png';
+        var none = 'https://continentalenvelope.com/wp-content/uploads/2019/09/user-icon.png';
         const img = ['https://vignette.wikia.nocookie.net/harrypotter/images/b/b7/Harry-potter-goblet-of-fire-hannah.jpg/revision/latest/scale-to-width-down/350?cb=20170731215859',
             'https://vignette.wikia.nocookie.net/harryalbuspotter/images/a/a5/Babbling.JPG/revision/latest/scale-to-width-down/340?cb=20111218123202',
             none,
