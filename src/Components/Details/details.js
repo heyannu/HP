@@ -101,7 +101,7 @@ export default class Details extends Component {
                                 </h1>
                                 <h1 id="info">
                                 {!data.animagus ? null : 
-                                <span className='start'>Animagus  :- <span className='start'> {data.animagus}</span></span>
+                                <span>Animagus  :- <span className='start'> {data.animagus}</span></span>
                                 }
                                 </h1>
                                 <h1 id="info">
